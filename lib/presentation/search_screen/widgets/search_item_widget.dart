@@ -1,18 +1,18 @@
-import '../models/resortprofile_item_model.dart';
+import '../models/search_item_model.dart';
 import 'package:booking/core/app_export.dart';
 import 'package:booking/widgets/custom_rating_bar.dart';
 import 'package:flutter/material.dart' hide SearchController;
 
 // ignore: must_be_immutable
-class ResortprofileItemWidget extends StatelessWidget {
-  ResortprofileItemWidget(
-    this.resortprofileItemModelObj, {
+class SearchItemWidget extends StatelessWidget {
+  SearchItemWidget(
+    this.searchItemModelObj, {
     Key? key,
   }) : super(
           key: key,
         );
 
-  ResortprofileItemModel resortprofileItemModelObj;
+  SearchItemModel searchItemModelObj;
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +40,7 @@ class ResortprofileItemWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    resortprofileItemModelObj.resortNameTxt,
+                    searchItemModelObj.beachresortTxt,
                     style: theme.textTheme.titleMedium,
                   ),
                   Padding(
@@ -115,7 +115,7 @@ class ResortprofileItemWidget extends StatelessWidget {
                       top: 6,
                     ),
                     child: Text(
-                      resortprofileItemModelObj.priceTxt,
+                      searchItemModelObj.priceTxt,
                       style: CustomTextStyles.bodyLargePrimary,
                     ),
                   ),

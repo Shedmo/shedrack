@@ -46,6 +46,7 @@ class CategoryFilterScreen extends StatelessWidget {
                                 width: 35,
                                 margin: getMargin(left: 30, top: 30),
                                 padding: getPadding(all: 4),
+                                decoration: IconButtonStyleHelper.radiusTL6,
                                 onTap: () {
                                   onTapBtnArrowleftone(context);
                                 },

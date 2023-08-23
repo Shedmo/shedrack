@@ -93,59 +93,72 @@ class ClientListScreen extends StatelessWidget {
                                           mainAxisAlignment:
                                               MainAxisAlignment.start,
                                           children: [
-                                            Row(children: [
-                                              Text("lbl_room_name".tr,
-                                                  style: theme
-                                                      .textTheme.titleSmall),
-                                              Padding(
-                                                  padding: getPadding(left: 18),
-                                                  child: Text("lbl_room_142".tr,
+                                            Padding(
+                                                padding: getPadding(right: 10),
+                                                child: Row(children: [
+                                                  Text("lbl_room_name".tr,
                                                       style: theme.textTheme
-                                                          .labelLarge)),
-                                              Spacer(),
-                                              Text("lbl_07xxxxxx".tr,
-                                                  style: theme
-                                                      .textTheme.labelLarge)
-                                            ]),
-                                            SizedBox(
-                                                height: getVerticalSize(15)),
-                                            Row(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
-                                                children: [
+                                                          .titleSmall),
                                                   Padding(
                                                       padding:
-                                                          getPadding(bottom: 4),
+                                                          getPadding(left: 18),
                                                       child: Text(
-                                                          "lbl_nationality".tr,
-                                                          style: theme.textTheme
-                                                              .titleSmall)),
-                                                  Padding(
-                                                      padding: getPadding(
-                                                          left: 27,
-                                                          top: 3,
-                                                          bottom: 2),
-                                                      child: Text(
-                                                          "lbl_tanzanian".tr,
+                                                          "lbl_room_142".tr,
                                                           style: theme.textTheme
                                                               .labelLarge)),
-                                                  Padding(
-                                                      padding: getPadding(
-                                                          left: 38,
-                                                          top: 3,
-                                                          bottom: 1),
-                                                      child: Text(
-                                                          "lbl_adress".tr,
-                                                          style: theme.textTheme
-                                                              .titleSmall)),
-                                                  Padding(
-                                                      padding: getPadding(
-                                                          left: 11, top: 5),
-                                                      child: Text("lbl_kago".tr,
-                                                          style: theme.textTheme
-                                                              .labelLarge))
-                                                ]),
-                                            SizedBox(height: getVerticalSize(7))
+                                                  Spacer(),
+                                                  Text("lbl_07xxxxxx".tr,
+                                                      style: theme
+                                                          .textTheme.labelLarge)
+                                                ])),
+                                            Padding(
+                                                padding: getPadding(
+                                                    top: 15,
+                                                    right: 9,
+                                                    bottom: 7),
+                                                child: Row(
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment.end,
+                                                    children: [
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              bottom: 4),
+                                                          child: Text(
+                                                              "lbl_nationality"
+                                                                  .tr,
+                                                              style: theme
+                                                                  .textTheme
+                                                                  .titleSmall)),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              left: 27,
+                                                              top: 3,
+                                                              bottom: 2),
+                                                          child: Text(
+                                                              "lbl_tanzanian"
+                                                                  .tr,
+                                                              style: theme
+                                                                  .textTheme
+                                                                  .labelLarge)),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              left: 38,
+                                                              top: 3,
+                                                              bottom: 1),
+                                                          child: Text(
+                                                              "lbl_adress".tr,
+                                                              style: theme
+                                                                  .textTheme
+                                                                  .titleSmall)),
+                                                      Padding(
+                                                          padding: getPadding(
+                                                              left: 11, top: 5),
+                                                          child: Text(
+                                                              "lbl_kago".tr,
+                                                              style: theme
+                                                                  .textTheme
+                                                                  .labelLarge))
+                                                    ]))
                                           ]))),
                               Align(
                                   alignment: Alignment.topRight,
@@ -166,7 +179,7 @@ class ClientListScreen extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Padding(
-                                      padding: getPadding(left: 12),
+                                      padding: getPadding(left: 12, right: 3),
                                       child: Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.center,

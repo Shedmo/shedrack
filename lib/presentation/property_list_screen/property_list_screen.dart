@@ -77,7 +77,6 @@ class PropertyListScreen extends StatelessWidget {
                                         textInputAction: TextInputAction.done);
                                   }))),
                       Container(
-                          width: getHorizontalSize(333),
                           margin: getMargin(left: 16, top: 73, right: 13),
                           padding: getPadding(
                               left: 18, top: 4, right: 18, bottom: 4),
@@ -87,25 +86,28 @@ class PropertyListScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
-                                Row(children: [
-                                  Text("lbl_ref_no".tr,
-                                      style: theme.textTheme.titleSmall),
-                                  Padding(
-                                      padding: getPadding(left: 13),
-                                      child: Text("lbl_juma".tr,
-                                          style: CustomTextStyles
-                                              .titleSmallErrorContainer)),
-                                  Spacer(),
-                                  Text("lbl_name2".tr,
-                                      style: theme.textTheme.titleSmall),
-                                  Padding(
-                                      padding: getPadding(left: 13),
-                                      child: Text("lbl_juma_tuu".tr,
-                                          style: CustomTextStyles
-                                              .titleSmallErrorContainer))
-                                ]),
                                 Padding(
-                                    padding: getPadding(left: 4, top: 10),
+                                    padding: getPadding(right: 19),
+                                    child: Row(children: [
+                                      Text("lbl_ref_no".tr,
+                                          style: theme.textTheme.titleSmall),
+                                      Padding(
+                                          padding: getPadding(left: 13),
+                                          child: Text("lbl_juma".tr,
+                                              style: CustomTextStyles
+                                                  .titleSmallErrorContainer)),
+                                      Spacer(),
+                                      Text("lbl_name2".tr,
+                                          style: theme.textTheme.titleSmall),
+                                      Padding(
+                                          padding: getPadding(left: 13),
+                                          child: Text("lbl_juma_tuu".tr,
+                                              style: CustomTextStyles
+                                                  .titleSmallErrorContainer))
+                                    ])),
+                                Padding(
+                                    padding:
+                                        getPadding(left: 4, top: 10, right: 29),
                                     child: Row(
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,

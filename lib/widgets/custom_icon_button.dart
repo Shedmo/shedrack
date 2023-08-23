@@ -71,3 +71,14 @@ class CustomIconButton extends StatelessWidget {
         ),
       );
 }
+
+/// Extension on [CustomIconButton] to facilitate inclusion of all types of border style etc
+extension IconButtonStyleHelper on CustomIconButton {
+  static BoxDecoration get radiusTL6 => BoxDecoration(
+        borderRadius: BorderRadius.circular(
+          getHorizontalSize(
+            6.00,
+          ),
+        ),
+      );
+}

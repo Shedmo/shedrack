@@ -24,8 +24,8 @@ class CreatePropertyBloc
         phoneNumberController: TextEditingController(),
         phoneNumberController1: TextEditingController(),
         emailController: TextEditingController(),
-        groupSeventyEigController: TextEditingController(),
-        groupEightyThreController: TextEditingController(),
-        groupEightyTwoController: TextEditingController()));
+        group369Controller: TextEditingController(),
+        group374Controller: TextEditingController(),
+        group373Controller: TextEditingController()));
   }
 }

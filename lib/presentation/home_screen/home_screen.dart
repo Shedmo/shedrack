@@ -161,7 +161,7 @@ class HomeScreen extends StatelessWidget {
                                                                                 top: 7,
                                                                                 right: 16,
                                                                                 bottom: 7),
-                                                                            decoration: AppDecoration.fillOnPrimary.copyWith(borderRadius: BorderRadiusStyle.roundedBorder5),
+                                                                            decoration: BoxDecoration(borderRadius: BorderRadiusStyle.roundedBorder5),
                                                                             child: CustomImageView(svgPath: ImageConstant.imgVideocamera, height: getVerticalSize(8), width: getHorizontalSize(32), alignment: Alignment.bottomCenter))
                                                                       ])))
                                                         ])),
@@ -312,7 +312,7 @@ class HomeScreen extends StatelessWidget {
                                                                               height: getVerticalSize(24),
                                                                               width: getHorizontalSize(66),
                                                                               padding: getPadding(left: 16, top: 7, right: 16, bottom: 7),
-                                                                              decoration: AppDecoration.fillOnPrimary.copyWith(borderRadius: BorderRadiusStyle.roundedBorder5),
+                                                                              decoration: BoxDecoration(borderRadius: BorderRadiusStyle.roundedBorder5),
                                                                               child: CustomImageView(svgPath: ImageConstant.imgVideocamera, height: getVerticalSize(8), width: getHorizontalSize(32), alignment: Alignment.bottomCenter))
                                                                         ])
                                                                   ]))
@@ -672,7 +672,7 @@ class HomeScreen extends StatelessWidget {
                                                 .bodyLargeBluegray700))
                                   ])),
                           Padding(
-                              padding: getPadding(left: 30, top: 22),
+                              padding: getPadding(left: 30, top: 22, right: 30),
                               child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [

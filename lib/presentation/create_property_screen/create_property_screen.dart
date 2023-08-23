@@ -211,33 +211,30 @@ class CreatePropertyScreen extends StatelessWidget {
                               }),
                           BlocSelector<CreatePropertyBloc, CreatePropertyState,
                                   TextEditingController?>(
-                              selector: (state) =>
-                                  state.groupSeventyEigController,
-                              builder: (context, groupSeventyEigController) {
+                              selector: (state) => state.group369Controller,
+                              builder: (context, group369Controller) {
                                 return CustomTextFormField(
-                                    controller: groupSeventyEigController,
+                                    controller: group369Controller,
                                     margin:
                                         getMargin(left: 4, top: 15, right: 4),
                                     hintText: "msg_property_official".tr);
                               }),
                           BlocSelector<CreatePropertyBloc, CreatePropertyState,
                                   TextEditingController?>(
-                              selector: (state) =>
-                                  state.groupEightyThreController,
-                              builder: (context, groupEightyThreController) {
+                              selector: (state) => state.group374Controller,
+                              builder: (context, group374Controller) {
                                 return CustomTextFormField(
-                                    controller: groupEightyThreController,
+                                    controller: group374Controller,
                                     margin:
                                         getMargin(left: 4, top: 28, right: 4),
                                     hintText: "msg_property_desription".tr);
                               }),
                           BlocSelector<CreatePropertyBloc, CreatePropertyState,
                                   TextEditingController?>(
-                              selector: (state) =>
-                                  state.groupEightyTwoController,
-                              builder: (context, groupEightyTwoController) {
+                              selector: (state) => state.group373Controller,
+                              builder: (context, group373Controller) {
                                 return CustomTextFormField(
-                                    controller: groupEightyTwoController,
+                                    controller: group373Controller,
                                     margin:
                                         getMargin(left: 4, top: 15, right: 4),
                                     hintText: "msg_property_service_offers".tr,

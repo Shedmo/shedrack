@@ -19,7 +19,7 @@ class AddRoomBloc extends Bloc<AddRoomEvent, AddRoomState> {
       nameController: TextEditingController(),
       typevalueoneController: TextEditingController(),
       priceController: TextEditingController(),
-      groupThirteenController: TextEditingController(),
+      group304Controller: TextEditingController(),
     ));
   }
 }

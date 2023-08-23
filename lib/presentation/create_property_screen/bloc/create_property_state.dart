@@ -12,9 +12,9 @@ class CreatePropertyState extends Equatable {
     this.phoneNumberController,
     this.phoneNumberController1,
     this.emailController,
-    this.groupSeventyEigController,
-    this.groupEightyThreController,
-    this.groupEightyTwoController,
+    this.group369Controller,
+    this.group374Controller,
+    this.group373Controller,
     this.createPropertyModelObj,
   });
 
@@ -32,11 +32,11 @@ class CreatePropertyState extends Equatable {
 
   TextEditingController? emailController;
 
-  TextEditingController? groupSeventyEigController;
+  TextEditingController? group369Controller;
 
-  TextEditingController? groupEightyThreController;
+  TextEditingController? group374Controller;
 
-  TextEditingController? groupEightyTwoController;
+  TextEditingController? group373Controller;
 
   CreatePropertyModel? createPropertyModelObj;
 
@@ -49,9 +49,9 @@ class CreatePropertyState extends Equatable {
         phoneNumberController,
         phoneNumberController1,
         emailController,
-        groupSeventyEigController,
-        groupEightyThreController,
-        groupEightyTwoController,
+        group369Controller,
+        group374Controller,
+        group373Controller,
         createPropertyModelObj,
       ];
   CreatePropertyState copyWith({
@@ -62,9 +62,9 @@ class CreatePropertyState extends Equatable {
     TextEditingController? phoneNumberController,
     TextEditingController? phoneNumberController1,
     TextEditingController? emailController,
-    TextEditingController? groupSeventyEigController,
-    TextEditingController? groupEightyThreController,
-    TextEditingController? groupEightyTwoController,
+    TextEditingController? group369Controller,
+    TextEditingController? group374Controller,
+    TextEditingController? group373Controller,
     CreatePropertyModel? createPropertyModelObj,
   }) {
     return CreatePropertyState(
@@ -77,12 +77,9 @@ class CreatePropertyState extends Equatable {
       phoneNumberController1:
           phoneNumberController1 ?? this.phoneNumberController1,
       emailController: emailController ?? this.emailController,
-      groupSeventyEigController:
-          groupSeventyEigController ?? this.groupSeventyEigController,
-      groupEightyThreController:
-          groupEightyThreController ?? this.groupEightyThreController,
-      groupEightyTwoController:
-          groupEightyTwoController ?? this.groupEightyTwoController,
+      group369Controller: group369Controller ?? this.group369Controller,
+      group374Controller: group374Controller ?? this.group374Controller,
+      group373Controller: group373Controller ?? this.group373Controller,
       createPropertyModelObj:
           createPropertyModelObj ?? this.createPropertyModelObj,
     );

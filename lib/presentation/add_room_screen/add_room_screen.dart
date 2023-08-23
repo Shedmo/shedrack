@@ -325,10 +325,10 @@ class AddRoomScreen extends StatelessWidget {
                     ),
                     child: BlocSelector<AddRoomBloc, AddRoomState,
                         TextEditingController?>(
-                      selector: (state) => state.groupThirteenController,
-                      builder: (context, groupThirteenController) {
+                      selector: (state) => state.group304Controller,
+                      builder: (context, group304Controller) {
                         return CustomTextFormField(
-                          controller: groupThirteenController,
+                          controller: group304Controller,
                           hintText: "msg_toilet_service".tr,
                           textInputAction: TextInputAction.done,
                         );

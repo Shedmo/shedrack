@@ -1,6 +1,6 @@
-import '../search_screen/widgets/resortprofile_item_widget.dart';
+import '../search_screen/widgets/search_item_widget.dart';
 import 'bloc/search_bloc.dart';
-import 'models/resortprofile_item_model.dart';
+import 'models/search_item_model.dart';
 import 'models/search_model.dart';
 import 'package:booking/core/app_export.dart';
 import 'package:booking/widgets/custom_text_form_field.dart';
@@ -188,8 +188,8 @@ class SearchScreen extends StatelessWidget {
                                               endIndent:
                                                   getHorizontalSize(12))),
                                       Padding(
-                                          padding:
-                                              getPadding(left: 13, top: 11),
+                                          padding: getPadding(
+                                              left: 12, top: 11, right: 12),
                                           child: Row(
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
@@ -267,17 +267,15 @@ class SearchScreen extends StatelessWidget {
                                                         getVerticalSize(40));
                                               },
                                               itemCount: searchModelObj
-                                                      ?.resortprofileItemList
-                                                      .length ??
+                                                      ?.searchItemList.length ??
                                                   0,
                                               itemBuilder: (context, index) {
-                                                ResortprofileItemModel model =
+                                                SearchItemModel model =
                                                     searchModelObj
-                                                                ?.resortprofileItemList[
+                                                                ?.searchItemList[
                                                             index] ??
-                                                        ResortprofileItemModel();
-                                                return ResortprofileItemWidget(
-                                                    model);
+                                                        SearchItemModel();
+                                                return SearchItemWidget(model);
                                               });
                                         }))),
                             SizedBox(height: getVerticalSize(647)),

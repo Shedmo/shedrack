@@ -1,22 +1,21 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:equatable/equatable.dart';
-import 'resortprofile_item_model.dart';
+import 'search_item_model.dart';
 
 /// This class defines the variables used in the [search_screen],
 /// and is typically used to hold data that is passed between different parts of the application.
 class SearchModel extends Equatable {
-  SearchModel({this.resortprofileItemList = const []});
+  SearchModel({this.searchItemList = const []});
 
-  List<ResortprofileItemModel> resortprofileItemList;
+  List<SearchItemModel> searchItemList;
 
-  SearchModel copyWith({List<ResortprofileItemModel>? resortprofileItemList}) {
+  SearchModel copyWith({List<SearchItemModel>? searchItemList}) {
     return SearchModel(
-      resortprofileItemList:
-          resortprofileItemList ?? this.resortprofileItemList,
+      searchItemList: searchItemList ?? this.searchItemList,
     );
   }
 
   @override
-  List<Object?> get props => [resortprofileItemList];
+  List<Object?> get props => [searchItemList];
 }

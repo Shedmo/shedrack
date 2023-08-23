@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import '/core/app_export.dart';
-import '../models/resortprofile_item_model.dart';
+import '../models/search_item_model.dart';
 import 'package:booking/presentation/search_screen/models/search_model.dart';
 part 'search_event.dart';
 part 'search_state.dart';
@@ -12,8 +12,8 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
     on<SearchInitialEvent>(_onInitialize);
   }
 
-  List<ResortprofileItemModel> fillResortprofileItemList() {
-    return List.generate(5, (index) => ResortprofileItemModel());
+  List<SearchItemModel> fillSearchItemList() {
+    return List.generate(5, (index) => SearchItemModel());
   }
 
   _onInitialize(
@@ -23,6 +23,6 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
     emit(state.copyWith(arrowtwoController: TextEditingController()));
     emit(state.copyWith(
         searchModelObj: state.searchModelObj
-            ?.copyWith(resortprofileItemList: fillResortprofileItemList())));
+            ?.copyWith(searchItemList: fillSearchItemList())));
   }
 }

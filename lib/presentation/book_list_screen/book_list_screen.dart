@@ -75,7 +75,6 @@ class BookListScreen extends StatelessWidget {
                                     child: Text("msg_search_room_list".tr,
                                         style: theme.textTheme.bodyLarge)))),
                         Container(
-                            width: getHorizontalSize(325),
                             margin: getMargin(left: 14, top: 26, right: 23),
                             padding: getPadding(left: 8, right: 8),
                             decoration: AppDecoration.outlineBlack900,
@@ -84,25 +83,30 @@ class BookListScreen extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                  Row(children: [
-                                    Text("lbl_ref_no".tr,
-                                        style: CustomTextStyles
-                                            .labelLargeBlack900),
-                                    Padding(
-                                        padding: getPadding(left: 10),
-                                        child: Text("lbl_00003x".tr,
-                                            style: theme.textTheme.labelLarge)),
-                                    Spacer(),
-                                    Text("lbl_date".tr,
-                                        style: CustomTextStyles
-                                            .labelLargeBlack900),
-                                    Padding(
-                                        padding: getPadding(left: 16),
-                                        child: Text("lbl_02_5_99".tr,
-                                            style: theme.textTheme.labelLarge))
-                                  ]),
                                   Padding(
-                                      padding: getPadding(left: 5, top: 6),
+                                      padding: getPadding(right: 11),
+                                      child: Row(children: [
+                                        Text("lbl_ref_no".tr,
+                                            style: CustomTextStyles
+                                                .labelLargeBlack900),
+                                        Padding(
+                                            padding: getPadding(left: 10),
+                                            child: Text("lbl_00003x".tr,
+                                                style: theme
+                                                    .textTheme.labelLarge)),
+                                        Spacer(),
+                                        Text("lbl_date".tr,
+                                            style: CustomTextStyles
+                                                .labelLargeBlack900),
+                                        Padding(
+                                            padding: getPadding(left: 16),
+                                            child: Text("lbl_02_5_99".tr,
+                                                style:
+                                                    theme.textTheme.labelLarge))
+                                      ])),
+                                  Padding(
+                                      padding: getPadding(
+                                          left: 5, top: 6, right: 10),
                                       child: Row(children: [
                                         Text("lbl_client2".tr,
                                             style: CustomTextStyles
@@ -153,7 +157,7 @@ class BookListScreen extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
                                   Padding(
-                                      padding: getPadding(left: 6),
+                                      padding: getPadding(left: 6, right: 6),
                                       child: Row(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,

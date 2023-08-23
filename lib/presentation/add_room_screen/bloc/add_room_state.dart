@@ -8,7 +8,7 @@ class AddRoomState extends Equatable {
     this.nameController,
     this.typevalueoneController,
     this.priceController,
-    this.groupThirteenController,
+    this.group304Controller,
     this.addRoomModelObj,
   });
 
@@ -18,7 +18,7 @@ class AddRoomState extends Equatable {
 
   TextEditingController? priceController;
 
-  TextEditingController? groupThirteenController;
+  TextEditingController? group304Controller;
 
   AddRoomModel? addRoomModelObj;
 
@@ -27,14 +27,14 @@ class AddRoomState extends Equatable {
         nameController,
         typevalueoneController,
         priceController,
-        groupThirteenController,
+        group304Controller,
         addRoomModelObj,
       ];
   AddRoomState copyWith({
     TextEditingController? nameController,
     TextEditingController? typevalueoneController,
     TextEditingController? priceController,
-    TextEditingController? groupThirteenController,
+    TextEditingController? group304Controller,
     AddRoomModel? addRoomModelObj,
   }) {
     return AddRoomState(
@@ -42,8 +42,7 @@ class AddRoomState extends Equatable {
       typevalueoneController:
           typevalueoneController ?? this.typevalueoneController,
       priceController: priceController ?? this.priceController,
-      groupThirteenController:
-          groupThirteenController ?? this.groupThirteenController,
+      group304Controller: group304Controller ?? this.group304Controller,
       addRoomModelObj: addRoomModelObj ?? this.addRoomModelObj,
     );
   }

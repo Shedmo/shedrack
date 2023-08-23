@@ -85,7 +85,7 @@ class AddClientScreen extends StatelessWidget {
                                           }))),
                               Padding(
                                   padding:
-                                      getPadding(left: 6, top: 6, right: 6),
+                                      getPadding(left: 6, top: 6, right: 8),
                                   child: OutlineGradientButton(
                                       padding: EdgeInsets.only(
                                           left: getHorizontalSize(1),
@@ -202,7 +202,8 @@ class AddClientScreen extends StatelessWidget {
                                                 hintText: "lbl_address".tr);
                                           }))),
                               Padding(
-                                  padding: getPadding(left: 8, top: 10),
+                                  padding:
+                                      getPadding(left: 8, top: 10, right: 5),
                                   child: Row(children: [
                                     Container(
                                         width: getHorizontalSize(168),
@@ -314,7 +315,7 @@ class AddClientScreen extends StatelessWidget {
                                   ])),
                               Padding(
                                   padding:
-                                      getPadding(left: 6, top: 12, right: 6),
+                                      getPadding(left: 6, top: 12, right: 8),
                                   child: OutlineGradientButton(
                                       padding: EdgeInsets.only(
                                           left: getHorizontalSize(1),
@@ -356,86 +357,93 @@ class AddClientScreen extends StatelessWidget {
                                                   return null;
                                                 });
                                           }))),
-                              SizedBox(height: getVerticalSize(19)),
-                              Row(children: [
-                                Padding(
-                                    padding: getPadding(top: 3),
-                                    child: OutlineGradientButton(
-                                        padding: EdgeInsets.only(
-                                            left: getHorizontalSize(1),
-                                            top: getVerticalSize(1),
-                                            right: getHorizontalSize(1),
-                                            bottom: getVerticalSize(1)),
-                                        strokeWidth: getHorizontalSize(1),
-                                        gradient: LinearGradient(
-                                            begin: Alignment(0.5, 0),
-                                            end: Alignment(0.5, 1),
-                                            colors: [
-                                              appTheme.blueGray600,
-                                              theme.colorScheme.primary
-                                            ]),
-                                        corners: Corners(
-                                            topLeft: Radius.circular(12),
-                                            topRight: Radius.circular(12),
-                                            bottomLeft: Radius.circular(12),
-                                            bottomRight: Radius.circular(12)),
-                                        child: BlocSelector<
-                                                AddClientBloc,
-                                                AddClientState,
-                                                TextEditingController?>(
-                                            selector: (state) =>
-                                                state.placeofbirthController,
-                                            builder: (context,
-                                                placeofbirthController) {
-                                              return CustomTextFormField(
-                                                  width: getHorizontalSize(175),
-                                                  controller:
-                                                      placeofbirthController,
-                                                  hintText:
-                                                      "lbl_place_of_birth".tr,
-                                                  contentPadding: getPadding(
-                                                      left: 13,
-                                                      top: 18,
-                                                      right: 13,
-                                                      bottom: 18));
-                                            }))),
-                                Padding(
-                                    padding: getPadding(left: 9, bottom: 3),
-                                    child: OutlineGradientButton(
-                                        padding: EdgeInsets.only(
-                                            left: getHorizontalSize(1),
-                                            top: getVerticalSize(1),
-                                            right: getHorizontalSize(1),
-                                            bottom: getVerticalSize(1)),
-                                        strokeWidth: getHorizontalSize(1),
-                                        gradient: LinearGradient(
-                                            begin: Alignment(0.5, 0),
-                                            end: Alignment(0.5, 1),
-                                            colors: [
-                                              appTheme.blueGray600,
-                                              theme.colorScheme.primary
-                                            ]),
-                                        corners: Corners(
-                                            topLeft: Radius.circular(12),
-                                            topRight: Radius.circular(12),
-                                            bottomLeft: Radius.circular(12),
-                                            bottomRight: Radius.circular(12)),
-                                        child: BlocSelector<
-                                                AddClientBloc,
-                                                AddClientState,
-                                                TextEditingController?>(
-                                            selector: (state) =>
-                                                state.occupationvalueController,
-                                            builder: (context,
-                                                occupationvalueController) {
-                                              return CustomTextFormField(
-                                                  width: getHorizontalSize(173),
-                                                  controller:
-                                                      occupationvalueController,
-                                                  hintText:
-                                                      "lbl_occupation".tr);
-                                            })))
-                              ]),
+                              Padding(
+                                  padding: getPadding(top: 19, right: 11),
+                                  child: Row(children: [
+                                    Padding(
+                                        padding: getPadding(top: 3),
+                                        child: OutlineGradientButton(
+                                            padding: EdgeInsets.only(
+                                                left: getHorizontalSize(1),
+                                                top: getVerticalSize(1),
+                                                right: getHorizontalSize(1),
+                                                bottom: getVerticalSize(1)),
+                                            strokeWidth: getHorizontalSize(1),
+                                            gradient: LinearGradient(
+                                                begin: Alignment(0.5, 0),
+                                                end: Alignment(0.5, 1),
+                                                colors: [
+                                                  appTheme.blueGray600,
+                                                  theme.colorScheme.primary
+                                                ]),
+                                            corners: Corners(
+                                                topLeft: Radius.circular(12),
+                                                topRight: Radius.circular(12),
+                                                bottomLeft: Radius.circular(12),
+                                                bottomRight:
+                                                    Radius.circular(12)),
+                                            child: BlocSelector<
+                                                    AddClientBloc,
+                                                    AddClientState,
+                                                    TextEditingController?>(
+                                                selector: (state) => state
+                                                    .placeofbirthController,
+                                                builder: (context,
+                                                    placeofbirthController) {
+                                                  return CustomTextFormField(
+                                                      width: getHorizontalSize(
+                                                          175),
+                                                      controller:
+                                                          placeofbirthController,
+                                                      hintText:
+                                                          "lbl_place_of_birth"
+                                                              .tr,
+                                                      contentPadding:
+                                                          getPadding(
+                                                              left: 13,
+                                                              top: 18,
+                                                              right: 13,
+                                                              bottom: 18));
+                                                }))),
+                                    Padding(
+                                        padding: getPadding(left: 9, bottom: 3),
+                                        child: OutlineGradientButton(
+                                            padding: EdgeInsets.only(
+                                                left: getHorizontalSize(1),
+                                                top: getVerticalSize(1),
+                                                right: getHorizontalSize(1),
+                                                bottom: getVerticalSize(1)),
+                                            strokeWidth: getHorizontalSize(1),
+                                            gradient: LinearGradient(
+                                                begin: Alignment(0.5, 0),
+                                                end: Alignment(0.5, 1),
+                                                colors: [
+                                                  appTheme.blueGray600,
+                                                  theme.colorScheme.primary
+                                                ]),
+                                            corners: Corners(
+                                                topLeft: Radius.circular(12),
+                                                topRight: Radius.circular(12),
+                                                bottomLeft: Radius.circular(12),
+                                                bottomRight:
+                                                    Radius.circular(12)),
+                                            child: BlocSelector<
+                                                    AddClientBloc,
+                                                    AddClientState,
+                                                    TextEditingController?>(
+                                                selector: (state) => state
+                                                    .occupationvalueController,
+                                                builder: (context,
+                                                    occupationvalueController) {
+                                                  return CustomTextFormField(
+                                                      width: getHorizontalSize(
+                                                          173),
+                                                      controller:
+                                                          occupationvalueController,
+                                                      hintText:
+                                                          "lbl_occupation".tr);
+                                                })))
+                                  ])),
                               GestureDetector(
                                   onTap: () {
                                     onTapRowdateofbirth(context);

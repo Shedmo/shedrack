@@ -167,61 +167,63 @@ class HoverOneScreen extends StatelessWidget {
                                         style: CustomTextStyles
                                             .bodyLargeBluegray700))
                               ])),
-                      SizedBox(height: getVerticalSize(22)),
-                      Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Expanded(
-                                child: Container(
-                                    margin: getMargin(right: 12),
-                                    padding: getPadding(
-                                        left: 27,
-                                        top: 12,
-                                        right: 27,
-                                        bottom: 12),
-                                    decoration: AppDecoration.outlineBlack
-                                        .copyWith(
-                                            borderRadius: BorderRadiusStyle
-                                                .roundedBorder12),
-                                    child: Row(children: [
-                                      Padding(
-                                          padding:
-                                              getPadding(top: 1, bottom: 1),
-                                          child: Text("lbl_adult".tr,
-                                              style: CustomTextStyles
-                                                  .bodyLargeCyan300)),
-                                      Padding(
-                                          padding: getPadding(left: 28, top: 1),
-                                          child: Text("lbl_02".tr,
-                                              style: CustomTextStyles
-                                                  .bodyLargeBluegray700))
-                                    ]))),
-                            Expanded(
-                                child: Container(
-                                    margin: getMargin(left: 12),
-                                    padding: getPadding(
-                                        left: 27,
-                                        top: 12,
-                                        right: 27,
-                                        bottom: 12),
-                                    decoration: AppDecoration.outlineBlack
-                                        .copyWith(
-                                            borderRadius: BorderRadiusStyle
-                                                .roundedBorder12),
-                                    child: Row(children: [
-                                      Padding(
-                                          padding: getPadding(top: 3),
-                                          child: Text("lbl_baby".tr,
-                                              style: CustomTextStyles
-                                                  .bodyLargeCyan300)),
-                                      Padding(
-                                          padding: getPadding(left: 28, top: 2),
-                                          child: Text("lbl_01".tr,
-                                              style: CustomTextStyles
-                                                  .bodyLargeBluegray700))
-                                    ])))
-                          ]),
-                      SizedBox(height: getVerticalSize(5))
+                      Padding(
+                          padding: getPadding(top: 22, right: 3, bottom: 5),
+                          child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Expanded(
+                                    child: Container(
+                                        margin: getMargin(right: 12),
+                                        padding: getPadding(
+                                            left: 27,
+                                            top: 12,
+                                            right: 27,
+                                            bottom: 12),
+                                        decoration: AppDecoration.outlineBlack
+                                            .copyWith(
+                                                borderRadius: BorderRadiusStyle
+                                                    .roundedBorder12),
+                                        child: Row(children: [
+                                          Padding(
+                                              padding:
+                                                  getPadding(top: 1, bottom: 1),
+                                              child: Text("lbl_adult".tr,
+                                                  style: CustomTextStyles
+                                                      .bodyLargeCyan300)),
+                                          Padding(
+                                              padding:
+                                                  getPadding(left: 28, top: 1),
+                                              child: Text("lbl_02".tr,
+                                                  style: CustomTextStyles
+                                                      .bodyLargeBluegray700))
+                                        ]))),
+                                Expanded(
+                                    child: Container(
+                                        margin: getMargin(left: 12),
+                                        padding: getPadding(
+                                            left: 27,
+                                            top: 12,
+                                            right: 27,
+                                            bottom: 12),
+                                        decoration: AppDecoration.outlineBlack
+                                            .copyWith(
+                                                borderRadius: BorderRadiusStyle
+                                                    .roundedBorder12),
+                                        child: Row(children: [
+                                          Padding(
+                                              padding: getPadding(top: 3),
+                                              child: Text("lbl_baby".tr,
+                                                  style: CustomTextStyles
+                                                      .bodyLargeCyan300)),
+                                          Padding(
+                                              padding:
+                                                  getPadding(left: 28, top: 2),
+                                              child: Text("lbl_01".tr,
+                                                  style: CustomTextStyles
+                                                      .bodyLargeBluegray700))
+                                        ])))
+                              ]))
                     ])),
             bottomNavigationBar: CustomElevatedButton(
                 text: "lbl_search".tr,

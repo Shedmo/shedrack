@@ -85,7 +85,7 @@ class CheckAvailabilyOutputScreen extends StatelessWidget {
                                       style: theme.textTheme.bodyMedium))
                             ])),
                         Padding(
-                            padding: getPadding(left: 8, top: 5),
+                            padding: getPadding(left: 8, top: 5, right: 85),
                             child: Row(children: [
                               Padding(
                                   padding: getPadding(bottom: 1),
